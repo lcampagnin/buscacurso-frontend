@@ -4,11 +4,36 @@
     height: 50%;
 }
 
+* {
+ font-size: 100%;
+ font-family: "Panton";
+ letter-spacing: 0.5px;
+}
+
+a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
+  font-weight: bold;
+}
+
+
+
+.row-anuncioa {
+  align-items: center;
+}
+
+.login-facebbok {
+  color:#400191;
+}
+
+.login-google {
+  column-rule-color: #dd4b39;
+}
+
 .center h1 {
 	margin-bottom:10px
 }
 h1,h2,h3,h4,h5,h6 {
-	line-height:1
+	line-height:1;
+  font-family: "Panton";
 }
 h1 {
 	font-size:3em;
@@ -45,28 +70,11 @@ p {
 	color:white;
 	text-decoration:none
 }
-
-.body-thumbnail {
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-bottom: 50px;
-}
-
-.box-texto {
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-.parceiros {
-  margin-left: 400px;
-  margin-right: 400px;
+.row-destaques{
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-top: 50px;
-  font-size: 16px;
-
-
-
 }
+
 footer {
 	background:#2B2B2B;
 	font-size:14px;
@@ -102,13 +110,70 @@ footer h6 {
   background: #3E3D3D;
   padding-top:5px;
   padding-bottom:5px;
-  text-align: center;
+  text-align:center;
   color:#DCDADA;
   font-size: 11px;
 }
+
 .fotter-links {
   padding-top:20px;
   padding-bottom:20px;
-  padding-left:20px;
-  padding-right: 20px;
+}
+
+.panel-heading{
+  text-align: center;
+}
+
+.panel-default {
+  align-content: center;
+  border-radius: 8px;
+}
+
+.btn-facebook{
+background-color: #3B5998;
+color: #ffffff;
+font-family: "Panton";
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.btn-facebook.disabled,
+.btn-facebook[disabled] {
+  color: #ffffff;
+  background-color: #133783;
+  *background-color: #102e6d;
+}
+
+.btn-facebook:active,
+.btn-facebook.active {
+  background-color: #0d2456 \9;
+}
+
+.btn-google-plus{
+background-color: #DD4B39;
+color: #ffffff;
+font-family: "Panton";
+}
+
+.btn-google-plus:hover,
+.btn-google-plus:focus,
+.btn-google-plus:active,
+.btn-google-plus.active,
+.btn-google-plus.disabled,
+.btn-google-plus[disabled] {
+  color: #ffffff;
+  background-color: #c53727;
+  *background-color: #b03123;
+}
+
+.login-bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: url("login-bg.jpg");
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
