@@ -74,10 +74,8 @@ p {
   margin-bottom: 20px;
   margin-top: 50px;
   font-size: 16px;
-
-
-
 }
+
 footer {
 	background:#2B2B2B;
 	font-size:14px;
@@ -151,13 +149,15 @@ body {
   font-weight: bold;
 }
 
+
 .log-in.panel {
   align-content: center;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
-  text-align:center;
+  text-align:left;
   border: none;
+  font-weight: normal;
 }
 
 .btn.btn-facebook.form-control {
@@ -169,7 +169,6 @@ body {
     background-color: RoyalBlue;
   }
 }
-
 
 .btn.btn-google-plus.form-control{
   font-weight: bold;
