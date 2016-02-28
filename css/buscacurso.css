@@ -193,3 +193,27 @@ body {
 .navbar {
   margin-bottom: 0px;
 }
+
+.painel-header-empresas{
+  align-content: center;
+  border-radius: 8px;
+  font-weight: normal;
+}
+
+.panel-heading-empresas {
+  align-content: center;
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 1px:
+}
+
+.panel-body-empresas {
+  align-content: center;
+  border-radius: 8px;
+  font-weight: normal;
+}
+
+.btn-group-horizontal {
+  align-content: flex-end;
+}
