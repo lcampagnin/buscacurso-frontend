@@ -213,3 +213,12 @@ align-button: right;
 .blockquote-seekat {
   font-size: 14px;
 }
+
+.partners {
+  background-color:#E0E1E2;
+  padding:30px;
+}
+
+.h3{
+  text-decoration: strong; 
+}
