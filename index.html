@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EZbusca</title>
+    <title>Seekat</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/buscacurso.css">
@@ -30,11 +30,7 @@
             <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <form role="search" class="navbar-form navbar-left">
-              <div class="form-group">
-              <input type="text" placeholder="Buscar" class="form-control">
-              </div>
-              </form>
+
                 <li><a href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Criar Conta</a></li>
                 <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
           </ul>
@@ -84,133 +80,182 @@
           <span class="icon-next"></span>
       </a>
     </div>
-
-
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12 partners">
-        <div class="row">
-          <div class="col-sm-7 col-sm-push-3">
-            <img alt="logos" class="img-responsive" src="images/partners/logos-top2.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-
 <br>
-
-  <div class="container">
-    <div class="row-destaques">
-      <div class="col-sm-12">
-        <h3>DESTAQUES</h3>
-        <p> Aqui você encontra os cursos que estão em destaques.</p>
-      </div>
-      <br>
-    </div>
-
-
-<br>
-
-      <div class="row-anuncioa">
-        <div class="col-sm-12">
-          <div class="thumbnail">
-            <img class="img-responsive" src="images\cursos\960x380px\anuncio01.png">
-              <span class="label label-info info">
-                <span data-toggle="tooltip" title="View">8 <b class="glyphicon glyphicon-eye-open"></b></span>
-                <span data-toggle="tooltip" title="Favoritos">13 <b class="glyphicon glyphicon-heart"></b></span>
-              </span>
-                  <div class="caption">
-                    <h3>AP® Spanish Language and Culture</h3>
-                  </div>
-          </div>
-        </div>
-        </div>
-      </div>
-  </div>
-
-
-<div class="container">
-  <div class="row.anunciosb">
-    <br>
-    <div class="row-destaques">
-      <div class="col-sm-12">
-        <h3>MAIS PROCURADOS</h3>
-        <p> Aqui você encontra os cursos que estão em desteques por serem mais requisitados, mais novos ou mais pontuados.</p>
-      </div>
-      <br>
-    </div>
-
-
-    <div class="col-sm-4">
-
-      <div class="thumbnail">
-        <img class="img-responsive" src="images/cursos/360x250/anuncio02.png">
-          <span class="label label-info info">
-            <span data-toggle="tooltip" title="View">8 <b class="glyphicon glyphicon-eye-open"></b></span>
-            <span data-toggle="tooltip" title="Favoritos">13 <b class="glyphicon glyphicon-heart"></b></span>
-          </span>
-              <div class="caption">
-                <h3>AP® Spanish Language and Culture</h3>
-                <p> Do you want to take the AP Spanish exam, but your school doesn’t offer a Spanish language course?
-                  Are you looking for a way to get more practice with and exposure to the AP Spanish exam in general?
-                  Then this interactive online course from Boston University Spanish instructors is for you.</p>
-                  <p><a href="https://www.edx.org/course/apr-spanish-language-culture-bux-spanishx" class="btn btn-primary" role="button">Mais Informações </a></p>
+    <div class="container">
+      <div class="row row-search">
+          <form class="form" action="/courses/search" accept-charset="UTF-8" method="get">
+            <div class="col-md-10">
+              <div class="form-group">
+                <input type="text" name="query" class="input-lg form-control" autocomplete="off" />
               </div>
+            </div>
+            <div class="col-md-2">
+              <input type="submit" name="commit" value="Buscar" class="btn btn-lg btn-block btn-search-home from-control" />
+            </div>
+          </form>
       </div>
-    </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="home-titles">Confira os destaques da semana</P>
+        </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="thumbnail thumb-big">
+            <a href="https://www.udemy.com/criar-ebook/">
+              <img alt="thumbnail" src="images/cursos/1500 X 500/adv-big-ebook.jpg">
+              <div class="caption">
+                <p class="adv-big">Aprenda como criar um eBook</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="home-titles">Outros destaques</p>
+        </div>
+      </div>
 
       <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="images/cursos//360x250/anuncio03.png">
-          <span class="label label-info info">
-            <span data-toggle="tooltip" title="View">200 <b class="glyphicon glyphicon-eye-open"></b></span>
-            <span data-toggle="tooltip" title="Favoritos">13 <b class="glyphicon glyphicon-heart"></b></span>
-          </span>
-
-            <div class="caption">
-              <h3>The Einstein Revolution</h3>
-              <p>Albert Einstein has become the icon of modern science. Following his scientific, cultural, philosophical, and political trajectory,
-                this course aims to track the changing role of physics in the 20th and 21st centuries. This history courses addresses Einstein's engagement
-                with relativity, quantum mechanics, Nazism, nuclear weapons, philosophy, the arts, and technology, and raises basic questions
-                about what it means to understand physics in its broader history.</p>
-              <p><a href="https://www.edx.org/course/einstein-revolution-harvardx-emc2x-0#!" class="btn btn-primary" role="button-thumbnail"> Mais Informações</a> </p>
-            </div>
-
+        <div class="thumbnail thumb-med">
+            <img class="img-responsive" src="images/cursos/360x210/03_adv-medium.jpg">
+            <a href="http://www.veduca.com.br/cursos/gratuitos/energias-renovaveis"></a>
+              <div class="caption">
+                <p class="adv-medium">Programa para geração e uso de energias limpas na América Latina</p>
+                <p><a href="http://www.veduca.com.br/cursos/gratuitos/energias-renovaveis"></a></p>
+              </div>
         </div>
       </div>
 
+      <div class="col-sm-4">
+        <div class="thumbnail thumb-med">
+            <img class="img-responsive" src="images/cursos/360x210/02_adv-medium.jpg">
+            <p><a href="http://www.veduca.com.br/cursos/gratuitos/google-adwords"></a></p>
+              <div class="caption">
+                <p class="adv-medium">Aprenda a utilizar o Google AdWords</p>
+                <p><a href="http://www.veduca.com.br/cursos/gratuitos/google-adwords"</a></p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="thumbnail thumb-med">
+            <img class="img-responsive" src="images/cursos/360x210/04_adv-medium.jpg">
+            <p><a href="https://www.edx.org/course/implementing-customer-insights-business-delftx-idemc-1x"</a></p>
+              <div class="caption">
+                <p class="adv-medium">Ensino híbrido: personalização e tecnologia na educação </p>
+
+                <p><a href="https://www.edx.org/course/implementing-customer-insights-business-delftx-idemc-1x"</a></p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="thumbnail thumb-med">
+            <img class="img-responsive" src="images/cursos/360x210/05_adv-medium.jpg">
+            <p><a href="https://www.edx.org/course/implementing-customer-insights-business-delftx-idemc-1x"</a></p>
+              <div class="caption">
+                <p class="adv-medium">Implementing Customer Insights for Your Business</p>
+                <p><a href="https://www.edx.org/course/implementing-customer-insights-business-delftx-idemc-1x"</a></p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="thumbnail thumb-med">
+            <img class="img-responsive" src="images/cursos/360x210/06_adv-medium.jpg">
+            <p><a href="http://www.veduca.com.br/cursos/gratuitos/financas-pessoais-e-investimento-em-acoes"</a></p>
+              <div class="caption">
+                <p class="adv-medium">Finanças pessoais e Investimentos em Ações   BMF & BOVESPA</p>
+                <p><a href="http://www.veduca.com.br/cursos/gratuitos/financas-pessoais-e-investimento-em-acoes"</a></p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="thumbnail thumb-med">
+            <img class="img-responsive" src="images/cursos/360x210/01_adv-medium.jpg">
+            <p><a href="https://www.udemy.com/brackets-edge-code/"</a></p>
+              <div class="caption">
+                <p class="adv-medium">Brackets & Edge Code  Fundamentos</p>
+                <p><a href="https://www.udemy.com/brackets-edge-code/"</a></p>
+              </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-4"></div>
         <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="images/cursos/360x250/anuncio01.png">
-            <span class="label label-info info">
-              <span data-toggle="tooltip" title="View">8 <b class="glyphicon glyphicon-eye-open"></b></span>
-              <span data-toggle="tooltip" title="Favoritos">13 <b class="glyphicon glyphicon-heart"></b></span>
-            </span>
-            <div class="caption">
-              <h3>Career Edge: The Path to Career Success</h3>
-              <p>What does it take to succeed in today’s competitive job market? Applicants need more than standard credentials
-                to get hired and be successful. The skills that are valued within the workplace have changed.
-                The Fullbridge Career Edge XSeries Program is designed to help you develop those key skills, through critical thinking and
-                problem solving techniques, strategies to succeed in teams and a foundation in the analytical and data driven frameworks needed for success in any industry.</p>
-              <p><a href="https://www.edx.org/xseries/career-edge-path-career-success" class="btn btn-primary" role="button">Mais Informações</a> </p>
-            </div>
+          <button type="button" class="btn btn-primary-highlights">TODOS OS EVENTOS</button>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="home-titles">Divulgue sua empresa e promova seus eventos</P>
           </div>
         </div>
-      </div>
+
+        <br>
+
+        <div class="col-sm-3">
+          <div class="thumbnail thumb-small">
+              <img class="img-responsive" src="images\adv\adv-01.jpg">
+              <a href="#"</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="thumbnail thumb-small">
+              <img class="img-responsive" src="images\adv\adv-02.jpg">
+              <a href="#"</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="thumbnail thumb-small">
+              <img class="img-responsive" src="images\adv\adv-03.jpg">
+              <a href="#"</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="thumbnail thumb-small">
+              <img class="img-responsive" src="images\adv\adv-04.jpg">
+              <a href="#"</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-primary-highlights">TODOS OS PARCEIROS</button>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+
+        <br>
+        <br>
+
+      </div><!--end of container advertsments-->
     </div>
   </div>
-</div>
-</div>
-
-<br>
+</div> <!--end of body-->
 
 
-
-
-
-
-        <footer class="footer">
+      <footer class="footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-12 social-footer">
@@ -294,7 +339,6 @@
                   </div>
                 </div>
       </footer>
-
       </div>
     </div>
 </html>
