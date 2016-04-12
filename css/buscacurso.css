@@ -14,6 +14,10 @@ a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
   font-weight: bold;
 }
 
+.space60 {
+  margin-top: 100px;
+}
+
 .center h1 {
 	margin-bottom:10px;
 }
@@ -21,28 +25,8 @@ a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
 h1,h2,h3,h4,h5,h6 {
 	line-height:1;
 }
-h1 {
-	font-size:3em;
-	letter-spacing:1px;
-	margin-bottom:30px;
-	text-align:center;
-  font-weight:400;
-}
 
-h2 {
-	font-size:1.2em;
-	letter-spacing:2px;
-	margin-bottom:30px;
-	text-align:center;
-	font-weight:normal;
-	color:LightGray;
-}
-
-p {
-	font-size:1.1em;
-	line-height:1.7em;
-  font-weight: 300;
-}
+/*navbar logo seekat*/
 #logo {
 	float:left;
 	margin-right:100px;
@@ -80,11 +64,14 @@ p {
   font-size: 16px;
 }
 
+/* formating footer*/
 footer {
+  margin-top: 120px;
 	background:#2B2B2B;
 	font-size:14px;
 	color:#DCDADA;
 }
+
 footer h6 {
   font-size:14px;
   font-weight: bold;
@@ -98,7 +85,7 @@ footer h6 {
 .footer a:hover {
 	color:#E3C500;
   text-decoration: none;
-  font-weight: bold;body { padding-top: 70px; }
+  font-weight: 400;body { padding-top: 70px; }
 }
 	/* visited link */
 .footer a:visited {
@@ -111,19 +98,40 @@ footer h6 {
   padding-bottom: 5px;
 }
 
-.rodape {
+/* copyright seekat */
+.copyright {
   background: #3E3D3D;
-  padding-top:5px;
-  padding-bottom:5px;
-  text-align: center;
-  color:#DCDADA;
-  font-size: 11px;
+  height:40px;
+  margin-bottom: 0px;
 }
+
+p.copyright {
+  color:#DCDADA;
+  font-size: 12px;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:0px;
+}
+
+/* text footer about, partners, contact */
+p.about{
+  color:#E3C500;
+  font-size: 12px;
+  text-align: center;
+  text-align: left;
+  font-size: 14px;
+  font-weight:400;
+}
+
+/* links footer about, partners, contact */
 .fotter-links {
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:30px;
+  padding-bottom:30px;
   padding-left:20px;
-  padding-right: 20px;
+  padding-right:20px;
+  text-align: center;
+  letter-spacing:2px;
+  font-weight:300;
 }
 
 .label-highlight {
@@ -133,10 +141,12 @@ footer h6 {
   color: #333 !important;
   background: #fff401 !important;
 }
+
 div.pagination {
   text-align: center;
   display: block;
 }
+
 div.pagination ul {
   display: inline-block;
 }
@@ -144,6 +154,7 @@ div.pagination ul {
 body {
   padding-top: 50px;
 }
+
 .alert, .alert.alert-notice, .alert.alert-alert {
   margin-bottom: 0px;
 }
@@ -193,8 +204,7 @@ align-button: right;
   &:hover {
     color: white;
     background-color: #b03123;
-  }
-
+    }
 }
 
 .login-bg {
@@ -206,6 +216,7 @@ align-button: right;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -264,6 +275,28 @@ align-button: right;
   height: 180px;
 }
 
+.row-search {
+  margin-top: 70px;
+}
+
+.btn-search-home {
+  background-color: #E3C500;
+  color: #2B2B2B;
+  pointer-events: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  color:#58595B;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+}
+
+/* texts thumbnails home */
 p.adv-big {
   font-size: 30px;
   text-align: center;
@@ -295,14 +328,117 @@ p.home-titles {
   margin-top: 75px;
 }
 
-.row-search {
-  margin-top: 70px;
+p.home-titles-courses {
+  color:#234056;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight: 500;
+  margin:30px;
+  margin-bottom: 15px;
 }
 
-.btn-search-home {
+p.home-titles-legenda {
+  color:#58595B;
+  font-size:1.0em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+p {
+  color:#58595B;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+}
+
+.row-courses {
+  padding-right: 30px;
+  padding-top: 40px;
+}
+
+p.courses-text {
+  color:#58595B;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 60px;
+}
+
+p.courses-subtitles {
+  color:#234056;
+  font-size:28px;
+  line-height:13px;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:500;
+  margin-top: 60px;
+  margin-bottom:10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+p.carousel {
+	font-size:3em;
+	letter-spacing:1px;
+	margin-bottom:30px;
+	text-align:center;
+  font-weight:400;
+  color:LightGray;
+}
+
+.list-item {
+  color:#58595B;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+  margin-top: 20px;
+  margin-bottom:10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*formatting hr in all site */
+
+.divider {
+  display: block;
+  background:#E3C500;
+  width: 100%;
+  height: 5px;
+  margin: 30px 0;
+}
+
+/* foramting panel couses*/
+.panel-info-courses {
+  background-color:white;
+  border-color: #E3C500;
+}
+
+.panel-default>.panel-heading {
   background-color: #E3C500;
-  color: #2B2B2B;
-  pointer-events: center;
-  font-size: 18px;
+  border-color: #E3C500;
   font-weight: bold;
+  font-size: 16px;
+  height: 1px;
+  margin: 0px;
+}
+
+p .invest {
+  font-size: 40px;
+  align-content: center;
+  font-weight: 700;
 }
