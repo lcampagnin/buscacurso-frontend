@@ -59,10 +59,15 @@ a:visited {
   line-height: 20px;
   vertical-align: top;
   border-top: 1.5px solid #e3c500;
+  font-size: 14px;
 }
 
-tr .thead-research {
-  border-top: 2px solid #e3c500;
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 3px solid #e3c500;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(227, 197, 0);
 }
 
 /*navbar logo seekat*/
@@ -163,7 +168,7 @@ p.about{
 }
 
 /* links footer about, partners, contact */
-.fotter-links {
+.footer-links {
   padding-top:30px;
   padding-bottom:30px;
   padding-left:20px;
@@ -511,12 +516,9 @@ p.carousel {
 .divider-small {
   display: block;
   background:#E3C500;
+  width: 100%;
   height: 0.5px;
-  dotted: #FFFFFF;
-  margin-right:380px;
-  margin-left: 380px;
-  margin-bottom: 0px;
-
+  margin: 30px 0;
 }
 
 /* formating panel couses*/
@@ -614,11 +616,7 @@ p .invest {
 }
 
 /* Color page group-item-research */
-.pagination {
-  background-color:white;
-  border-color: #E3C500;
-  color:color:#3E3D3D;
-}
+
 
 .header-sidebar {
   background-color:#E3C500;
@@ -633,7 +631,7 @@ p .invest {
   background-color:#E3C500;
   border-radius: 12px;
   color:#3E3D3D;
-  margin-left: 7px;
+  margin-left: 10px;
 }
 
 .barside-top {
@@ -642,3 +640,5 @@ p .invest {
   padding-bottom: 3px;
   border: 0px;
 }
+
+/* pagination */
