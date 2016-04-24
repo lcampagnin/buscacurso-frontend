@@ -16,7 +16,7 @@ a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
 
 /* Space Between elemets*/
 .space60 {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .space120 {
@@ -512,21 +512,17 @@ p.carousel {
   display: block;
   background:#E3C500;
   height: 0.5px;
-  dotted: #FFFFFF;
-  margin-right:380px;
-  margin-left: 380px;
-  margin-bottom: 0px;
-
+  margin: 30px 0;
 }
 
 /* formating panel couses*/
-.panel-info-courses {
+.panel.panel-info-courses {
   background-color:white;
   border-color: #E3C500;
 }
 
-.panel-default>.panel-heading {
-  background-color: #E3C500;
+.panel.panel-info-courses>.panel-heading {
+  background-color: #E3C500 !important;
   border-color: #E3C500;
   font-weight: bold;
   font-size: 16px;
@@ -617,7 +613,7 @@ p .invest {
 .pagination {
   background-color:white;
   border-color: #E3C500;
-  color:color:#3E3D3D;
+  color: #3E3D3D;
 }
 
 .header-sidebar {
