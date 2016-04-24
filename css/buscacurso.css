@@ -16,7 +16,7 @@ a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
 
 /* Space Between elemets*/
 .space60 {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .space120 {
@@ -110,7 +110,6 @@ a:visited {
 
 /* formating footer*/
 footer {
-  margin-top: 120px;
 	background:#2B2B2B;
 	font-size:14px;
 	color:#DCDADA;
@@ -522,13 +521,13 @@ p.carousel {
 }
 
 /* formating panel couses*/
-.panel-info-courses {
+.panel.panel-info-courses {
   background-color:white;
   border-color: #E3C500;
 }
 
-.panel-default>.panel-heading {
-  background-color: #E3C500;
+.panel.panel-info-courses>.panel-heading {
+  background-color: #E3C500 !important;
   border-color: #E3C500;
   font-weight: bold;
   font-size: 16px;
@@ -616,7 +615,15 @@ p .invest {
 }
 
 /* Color page group-item-research */
+<<<<<<< HEAD
 
+=======
+.pagination {
+  background-color:white;
+  border-color: #E3C500;
+  color: #3E3D3D;
+}
+>>>>>>> origin/master
 
 .header-sidebar {
   background-color:#E3C500;
