@@ -105,7 +105,6 @@ tr .thead-research {
 
 /* formating footer*/
 footer {
-  margin-top: 120px;
 	background:#2B2B2B;
 	font-size:14px;
 	color:#DCDADA;
@@ -163,7 +162,7 @@ p.about{
 }
 
 /* links footer about, partners, contact */
-.fotter-links {
+.footer-links {
   padding-top:30px;
   padding-bottom:30px;
   padding-left:20px;
