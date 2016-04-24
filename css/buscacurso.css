@@ -14,8 +14,17 @@ a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
   font-weight: bold;
 }
 
+/* Space Between elemets*/
 .space60 {
   margin-top: 100px;
+}
+
+.space120 {
+  margin-top: 120px;
+}
+
+.space10 {
+  margin-top: 10px;
 }
 
 .center h1 {
@@ -24,6 +33,36 @@ a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
 
 h1,h2,h3,h4,h5,h6 {
 	line-height:1;
+}
+
+a {
+  color: #3E3D3D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3E3D3D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #969595;
+  text-decoration: none;
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th,
+.table>tfoot>tr>td, .table>tfoot>tr>th,
+.table>thead>tr>td, .table>thead>tr>th {
+  padding-bottom: 30px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: 1.5px solid #e3c500;
+}
+
+tr .thead-research {
+  border-top: 2px solid #e3c500;
 }
 
 /*navbar logo seekat*/
@@ -236,7 +275,7 @@ align-button: right;
 
 .btn-primary-highlights  {
   background-color: #E3C500;
-  color: #2B2B2B;
+  color: #3E3D3D;
   height: 50px;
   width: 360px;
   pointer-events: center;
@@ -281,11 +320,58 @@ align-button: right;
 
 .btn-search-home {
   background-color: #E3C500;
-  color: #2B2B2B;
+  color: #3E3D3D;
   pointer-events: center;
   font-size: 18px;
   font-weight: bold;
+  border-width: 0px;
 }
+
+.btn-search-home:hover {
+  background-color: #F3BE35;
+  color: #3E3D3D;
+  pointer-events: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-width: 0px;
+}
+
+.btn-search-home:visited {
+  background-color: #F7E07C;
+  color: #3E3D3D;
+  pointer-events: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-width: 0px;
+}
+
+.btn-sm-bnt-research {
+  background-color: #E3C500;
+  color: #3E3D3D;
+  pointer-events: center;
+  font-size: 16px;
+  font-weight: bold;;
+  border-width: 0px;
+}
+
+.btn-sm-bnt-research:hover {
+  background-color: #F3BE35;
+  color: #3E3D3D;
+  pointer-events: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-width: 0px;
+}
+
+ .btn-sm-bnt-research:visited {
+  background-color: #F7E07C;
+  color: #3E3D3D;
+  pointer-events: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-width: 0px;
+}
+
 
 p {
   color:#58595B;
@@ -422,7 +508,18 @@ p.carousel {
   margin: 30px 0;
 }
 
-/* foramting panel couses*/
+.divider-small {
+  display: block;
+  background:#E3C500;
+  height: 0.5px;
+  dotted: #FFFFFF;
+  margin-right:380px;
+  margin-left: 380px;
+  margin-bottom: 0px;
+
+}
+
+/* formating panel couses*/
 .panel-info-courses {
   background-color:white;
   border-color: #E3C500;
@@ -441,4 +538,107 @@ p .invest {
   font-size: 40px;
   align-content: center;
   font-weight: 700;
+}
+
+
+/* sharing page at social networks*/
+
+.btn-twitter {
+    background: #00acee;
+    border-radius: 3;
+    color: #fff;
+    font-style:normal;
+}
+
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff;
+}
+
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff;
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 3;
+    color: #fff;
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff;
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff;
+}
+.btn-googleplus {
+    background: #e93f2e;
+    border-radius: 3;
+    color: #fff;
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff;
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+    background: #ba3225;
+    color: #fff;
+}
+
+.btn-linkedin {
+    background: #0e76a8;
+    border-radius: 3;
+    color: #fff;
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #0b6087;
+    color: #fff;
+}
+
+.btn-sitename {
+    background-color: #000;
+    border-radius: 3;
+    color: #fff;
+}
+.btn-sitename:link, .btn-sitename:visited {
+    color: #fff;
+}
+.btn-sitename:active, .btn-sitename:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.share-social-medias {
+  margin-bottom: 100px;
+}
+
+/* Color page group-item-research */
+.pagination {
+  background-color:white;
+  border-color: #E3C500;
+  color:color:#3E3D3D;
+}
+
+.header-sidebar {
+  background-color:#E3C500;
+  border-color: #E3C500;
+  border-radius: 3px;
+  border-color: inherit;
+  color:#3E3D3D;
+  height: 40px;
+}
+
+.badge {
+  background-color:#E3C500;
+  border-radius: 12px;
+  color:#3E3D3D;
+  margin-left: 7px;
+}
+
+.barside-top {
+  background-color:#E3C500;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 0px;
 }

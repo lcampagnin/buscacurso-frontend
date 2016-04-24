@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seek<strong>at</strong></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/buscacurso.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="path/to/js/star-rating.min.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/"><img alt="Seekat" class="navbar-brand" src="images\logo-topo\marca-seekat.png" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="/be_company">Seja um Parceiro</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user"></span>
+              Luciane <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/users/edit">Minha Conta</a></li>
+              <li><a href="/companies">Parceiros</a></li>
+              <li><a href="/courses">Cursos | Eventos</a></li>
+              <li class="divider"></li>
+              <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+      </div>
+
+    </div>
+
+    <div class="container">
+
+
+
+  <p id="notice"></p>
+
+
+  <div class="container">
+    <div class="row row-search">
+        <form class="form" action="/courses/search" accept-charset="UTF-8" method="get">
+          <div class="col-md-10">
+            <div class="form-group">
+              <input type="text" name="query" class="input-lg form-control" autocomplete="off" />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <input type="submit" name="commit" value="Buscar" class="btn btn-lg btn-block btn-search-home from-control" />
+          </div>
+        </form>
+
+  <div class="space120"></div>
+
+
+  <div class="sidebar col-md-3">
+
+    <div class="list-group">
+      <div class="list-group-item barside-top"><h4>Tipo</h4></div>
+        <li class="list-group-item ">
+          <a href="/courses?action=search&amp;category_name=Feira&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+            Feira
+            <span class="badge"> 3 </span>
+          </a>
+        </li>
+
+    <div class="body-side-bar">
+      <ul class="list-group">
+          <li class="list-group-item ">
+            <a href="/courses?action=search&amp;category_name=Feira&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Feira
+              <span class="badge"> 3 </span>
+            </a> </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=T%C3%A9cnico&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Técnico
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=WorkShop&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              WorkShop
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=Confer%C3%AAncia&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Conferência
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=Encontro&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Encontro
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=Mestrado&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Mestrado
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=Mini+Cursos&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Mini Cursos
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=P%C3%B3s-Gradua%C3%A7%C3%A3o&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Pós-Graduação
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;category_name=Simp%C3%B3sio&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Simpósio
+              <span class="badge"> 1 </span>
+</a>          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="item-group">
+    <div class="list-group-item barside-top"><h4>Área</h4></div>
+
+    <div class="body">
+      <ul class="list-group">
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Sa%C3%BAde&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Saúde
+              <span class="badge"> 3 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Agricultura&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Agricultura
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Arquitetura&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Arquitetura
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Belas+Artes&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Belas Artes
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Biblioteconomia&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Biblioteconomia
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Ci%C3%AAncia+Naturais&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Ciência Naturais
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Ci%C3%AAncias+Puras&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Ciências Puras
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Ci%C3%AAncias+Sociais&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Ciências Sociais
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Cozinha+e+Culin%C3%A1ria&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Cozinha e Culinária
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Direito&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Direito
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;area_name=Turismo&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Turismo
+              <span class="badge"> 1 </span>
+</a>          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="item-group">
+    <div class="list-group-item barside-top"><h4>Ministrante</h4></div>
+
+    <div class="body">
+      <ul class="list-group">
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=&amp;q=&amp;utf8=%E2%9C%93">
+
+              <span class="badge"> 3 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=-&amp;q=&amp;utf8=%E2%9C%93">
+              -
+              <span class="badge"> 3 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=jean&amp;q=&amp;utf8=%E2%9C%93">
+              jean
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=-+&amp;q=&amp;utf8=%E2%9C%93">
+              -
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=Morfeu&amp;q=&amp;utf8=%E2%9C%93">
+              Morfeu
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=Prof.+Jean%2C+Dra.+Luciane%2C+Mestra+Karine%2C+Especil.+Bruna%2C+Presidente+Fulaninho&amp;q=&amp;utf8=%E2%9C%93">
+              Prof. Jean, Dra. Luciane, Mestra Karine, Especil. Bruna, Presidente Fulaninho
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=teste&amp;q=&amp;utf8=%E2%9C%93">
+              teste
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;lecturer_name=teste+teste+&amp;q=&amp;utf8=%E2%9C%93">
+              teste teste
+              <span class="badge"> 1 </span>
+</a>          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="item-group">
+    <div class="list-group-item barside-top"><h4>Parceiro</h4></div>
+    <div class="body">
+      <ul class="list-group">
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;company_name=Bru&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Bru
+              <span class="badge"> 3 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;company_name=JeanSoft&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              JeanSoft
+              <span class="badge"> 3 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;company_name=ParceiroB1&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              ParceiroB1
+              <span class="badge"> 3 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;company_name=Lulutas+Development&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Lulutas Development
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;company_name=Universidade+Federal+do+Paran%C3%A1+UFPR&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Universidade Federal do Paraná UFPR
+              <span class="badge"> 1 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;company_name=teste&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              teste
+              <span class="badge"> 1 </span>
+</a>          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="item-group">
+    <div class="list-group-item barside-top"><h4>Modo</h4></div>
+    <div class="body">
+      <ul class="list-group">
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;mode_name=Presencial&amp;q=&amp;utf8=%E2%9C%93">
+              Presencial
+              <span class="badge"> 8 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;mode_name=EAD&amp;q=&amp;utf8=%E2%9C%93">
+              EAD
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;commit=Buscar&amp;controller=courses&amp;mode_name=Semi-presencial&amp;q=&amp;utf8=%E2%9C%93">
+              Semi-presencial
+              <span class="badge"> 2 </span>
+</a>          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="item-group">
+    <div class="list-group-item barside-top"><h4>Certificado</h4></div>
+    <div class="body">
+      <ul class="list-group">
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;certificate_name=Sem+certificado&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Sem certificado
+              <span class="badge"> 4 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;certificate_name=Digital&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Digital
+              <span class="badge"> 2 </span>
+</a>          </li>
+          <li class="list-group-item">
+            <a href="/courses?action=search&amp;certificate_name=Certificado+pelo+MEC&amp;commit=Buscar&amp;controller=courses&amp;q=&amp;utf8=%E2%9C%93">
+              Certificado pelo MEC
+              <span class="badge"> 1 </span>
+</a>          </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="col-md-9">
+
+    <div class="table table-responsive">
+    <table class="table table-responsive table-hover">
+      <thead>
+        <tr>
+          <th ><h4>Nome do curso/evento</h4></th>
+          <th><h4>Início</h4></th>
+          <th><h4>Fim</h4></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <div class="table-research">
+        <tr>
+          <td><a href="/courses/15">Curso de Illustrator Básico</a></td>
+          <td>2016-03-21 23:21:00 UTC</td>
+          <td>2016-03-21 23:21:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Estética In São Paulo</a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">O 2° Simpósio Brasil Alemanhã em Meio Ambiente Urbano e Industrial (MAUI) </a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Curso Técnico em Administração </a></td>
+          <td>2016-02-11 20:29:00 UTC</td>
+          <td>2016-02-29 20:32:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/15">Curso de Illustrator Básico</a></td>
+          <td>2016-03-21 23:21:00 UTC</td>
+          <td>2016-03-21 23:21:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Estética In São Paulo</a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">O 2° Simpósio Brasil Alemanhã em Meio Ambiente Urbano e Industrial (MAUI) </a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Curso Técnico em Administração </a></td>
+          <td>2016-02-11 20:29:00 UTC</td>
+          <td>2016-02-29 20:32:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/15">Curso de Illustrator Básico</a></td>
+          <td>2016-03-21 23:21:00 UTC</td>
+          <td>2016-03-21 23:21:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Estética In São Paulo</a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">O 2° Simpósio Brasil Alemanhã em Meio Ambiente Urbano e Industrial (MAUI) </a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Curso Técnico em Administração </a></td>
+          <td>2016-02-11 20:29:00 UTC</td>
+          <td>2016-02-29 20:32:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/15">Curso de Illustrator Básico</a></td>
+          <td>2016-03-21 23:21:00 UTC</td>
+          <td>2016-03-21 23:21:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/14">Stand da Buena</td>
+          <td>2016-03-21 10:00:00 UTC</td>
+          <td>2016-03-21 20:00:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Estética In São Paulo</a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">O 2° Simpósio Brasil Alemanhã em Meio Ambiente Urbano e Industrial (MAUI) </a></td>
+          <td>2016-03-19 11:30:00 UTC</td>
+          <td>2016-03-21 18:20:00 UTC</td>
+        </tr>
+
+        <tr>
+          <td><a href="/courses/13">Curso Técnico em Administração </a></td>
+          <td>2016-02-11 20:29:00 UTC</td>
+          <td>2016-02-29 20:32:00 UTC</td>
+        </tr>
+
+          <tr>
+            <td><a href="/courses/15">Curso de Illustrator Básico</a></td>
+            <td>2016-03-21 23:21:00 UTC</td>
+            <td>2016-03-21 23:21:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/14">Stand da Buena</td>
+            <td>2016-03-21 10:00:00 UTC</td>
+            <td>2016-03-21 20:00:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/14">Stand da Buena</td>
+            <td>2016-03-21 10:00:00 UTC</td>
+            <td>2016-03-21 20:00:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/13">Estética In São Paulo</a></td>
+            <td>2016-03-19 11:30:00 UTC</td>
+            <td>2016-03-21 18:20:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/13">O 2° Simpósio Brasil Alemanhã em Meio Ambiente Urbano e Industrial (MAUI) </a></td>
+            <td>2016-03-19 11:30:00 UTC</td>
+            <td>2016-03-21 18:20:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/13">Curso Técnico em Administração </a></td>
+            <td>2016-02-11 20:29:00 UTC</td>
+            <td>2016-02-29 20:32:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/15">Curso de Illustrator Básico</a></td>
+            <td>2016-03-21 23:21:00 UTC</td>
+            <td>2016-03-21 23:21:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/14">Stand da Buena</td>
+            <td>2016-03-21 10:00:00 UTC</td>
+            <td>2016-03-21 20:00:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/14">Stand da Buena</td>
+            <td>2016-03-21 10:00:00 UTC</td>
+            <td>2016-03-21 20:00:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/13">Estética In São Paulo</a></td>
+            <td>2016-03-19 11:30:00 UTC</td>
+            <td>2016-03-21 18:20:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/13">O 2° Simpósio Brasil Alemanhã em Meio Ambiente Urbano e Industrial (MAUI) </a></td>
+            <td>2016-03-19 11:30:00 UTC</td>
+            <td>2016-03-21 18:20:00 UTC</td>
+          </tr>
+
+          <tr>
+            <td><a href="/courses/13">Curso Técnico em Administração </a></td>
+            <td>2016-02-11 20:29:00 UTC</td>
+            <td>2016-02-29 20:32:00 UTC</td>
+          </tr>
+
+        </div>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <br>
+
+      <div class="text-center">
+          <ul class="pagination">
+
+
+              <li class='active'>
+        <a remote="false">1</a>
+      </li>
+
+              <li>
+        <a rel="next" href="/courses/search?commit=Buscar&amp;page=2&amp;q=&amp;utf8=%E2%9C%93">2</a>
+      </li>
+
+        <li>
+      <a rel="next" href="/courses/search?commit=Buscar&amp;page=2&amp;q=&amp;utf8=%E2%9C%93">Próximo &rsaquo;</a>
+    </li>
+
+        <li>
+      <a href="/courses/search?commit=Buscar&amp;page=2&amp;q=&amp;utf8=%E2%9C%93">Último &raquo;</a>
+    </li>
+
+      </ul>
+
+      </div>
+
+          <a class="btn btn-default btn-lg btn-sm-bnt-research" href="/courses/new">Novo Curso</a>
+          <a class="btn btn-default btn-lg btn-sm-bnt-research" href="/courses">Todos os Cursos</a>
+</div>
+</div>
+
+</div> <!--end of body-->
+
+
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 social-footer">
+              <div class="row">
+
+                <div class="col-sm-1 col-sm-push-3 social-footer">
+                  <a href="https://www.facebook.com/seekatconcept/?ref=bookmarks">
+                  <img alt="facebook" class="img-responsive" src="images/social/icon-facebook.png" />
+                  </a>
+                </div>
+
+                <div class="col-sm-1 col-sm-push-3 social-footer">
+                  <a href="https://plus.google.com/u/1/111413800798780091124">
+                  <img alt="google+" class="img-responsive" src="images/social/icon-google.png" />
+                  </a>
+                </div>
+
+                <div class="col-sm-1 col-sm-push-3 social-footer">
+                  <a href="https://twitter.com/seekatconcept">
+                  <img alt="twitter" class="img-responsive inline-block" src="images/social/icon-twitter.png" />
+                </div>
+
+                <div class="col-sm-1 col-sm-push-3 social-footer">
+                  <a href="https://br.linkedin.com/in/seekat-concept-754b11115">
+                  <img alt="linkedin" class="img-responsive inline-block" src="images/social/icon-linkedin.png" />
+                </div>
+
+                <div class="col-sm-1 col-sm-push-3 social-footer">
+                  <a href="https://www.instagram.com/seekatconcept/">
+                  <img alt="instagram" class="img-responsive inline-block" src="images/social/icon-instagram.png" />
+                </div>
+
+                <div class="col-sm-1 col-sm-push-3 social-footer">
+                  <a href="https://www.youtube.com/channel/UCux1V-2TlhjTu-2mIbn0ZzA">
+                  <img alt="youtube" class="img-responsive inline-block" src="images/social/icon-youtube.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row fotter-links"> </div>
+            <div class="row">
+              <div class="col-sm-2 col-sm-push-3">
+                <p class="about">SOBRE</p>
+                  <ul class="list-unstyled">
+                    <li><a href="/aboutus.html">Quem somos</a></li>
+                    <li><a href="/comofunciona">Como funciona</a></li>
+                    <li><a href="/servicos">Servicos oferecidos</a></li>
+                    <li><a href="/servicos">Termos de uso</a></li>
+                    <li><a href="/servicos">Política de privicidade</a></li>
+                  </ul>
+              </div><!--close col smal-2"-->
+
+              <div class="col-sm-2 col-sm-push-3">
+                <p class="about">PARCEIROS</p>
+                  <ul class="list-unstyled">
+                    <li><a href="/empresas">Empresas</a></li>
+                    <li><a href="/instituicoes">Instituições de ensino</a></li>
+                    <li><a href="/palestrantes">Palestrantes</a></li>
+                    <li><a href="/estudantes-profissionais">Estudantes e profissionais</a></li>
+                  </ul>
+              </div><!--end class col-sm-2-->
+
+              <div class="col-sm-2 col-sm-push-3">
+                <p class="about">CONTATO</p>
+                  <ul class="list-unstyled">
+                    <li><a href="/duvidas">Dúvidas frequentes</a></li>
+                        <li><a href="/suporte">Suporte</a></li>
+                  </ul>
+                </div>
+              </div><!--end class col-sm-2-->
+            </div><!--end class row-->
+
+            <div class="row fotter-links"> </div>
+              <div class="row">
+                <div class="col-sm-12 copyright">
+                  <p class="copyright"> Copyright © 2016 Seek<strong>at</strong> &nbsp;
+                    Desenvolvido por <a href="https://github.com/jcvicelli/" target="_blank">Jean Carlo Vicelli</a>
+                    &nbsp; Design por <a href="https://github.com/lcampagnin/" target="_blank">Luciane Campagnin</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+    </div>
+  </div>
+</html>
