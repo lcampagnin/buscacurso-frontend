@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+
+body {
+  padding-top: 50px;
+}
+
 .carousel {
     height: 50%;
 }
@@ -51,7 +56,6 @@ a:hover {
 }
 
 a:visited {
-  color: #969595;
   text-decoration: none;
 }
 
@@ -326,7 +330,7 @@ body {
   width: 100%;
   background-color:#E3C500;
   color: #3E3D3D;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   border-width: 1px;
   border-color:#E0AB26;
@@ -340,7 +344,7 @@ body {
   border-width: 1px;
   border-color:#E0AB26;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .btn-sm-bnt-research {
@@ -619,15 +623,11 @@ p .invest {
 }
 
 /* Color page group-item-research */
-<<<<<<< HEAD
-
-=======
 .pagination {
   background-color:white;
   border-color: #E3C500;
   color: #3E3D3D;
 }
->>>>>>> origin/master
 
 .header-sidebar {
   background-color:#E3C500;
@@ -719,4 +719,34 @@ p.name-company {
 
 .btn-back {
   width: 20%;
+}
+
+.btn-newpartner {
+  width: 30%;
+}
+
+.bnt-allcourses {
+  width: 40%;
+  background-color:#E3C500;
+  color: #3E3D3D;
+  font-size: 15px;
+  font-weight: 500;
+  border-width: 1px;
+  border-color:#E0AB26;
+  padding-left: 2px;
+}
+
+.bnt-allcourses:hover {
+  width: 40%;
+  background-color:#F2D552;
+  white-space: normal;
+  color:#3E3D3D;
+  border-width: 1px;
+  border-color:#E0AB26;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-search-result {
+  padding-left: 26px;
 }
