@@ -1,207 +1,244 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Seekat</title>
+    <title>Seek<strong>at</strong></title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/buscacurso.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="path-to-file/social-sharing.css" rel="stylesheet"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="path/to/js/star-rating.min.js" type="text/javascript"></script>
-    <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-  </script>
-<![endif]-->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-c90e9a7c24ccc673e1c206b07f6ca102c2c7d5c455ccee4a7581d8355d6b2d1d.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
+  <!-- Navigation -->
+
+
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/"><img alt="SeekAT" class="navbar-brand" src="/assets/marca-seeakat-ec865e6825d4d880bf908742a7ccd253b5fdb03c03d1ef60792ed58fbfd200a0.png" /></a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li><a href="/be_company">Seja um Parceiro</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-
-        <form class="navbar-form navbar-left" action="/courses/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-          <div class="input-group">
-            <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
-            <input type="text" name="q" id="q" class="form-control" placeholder="Buscar..." />
-          </div>
-</form>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="glyphicon glyphicon-user"></span>
-              Luciane <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="/users/edit">Minha Conta</a></li>
-              <li><a href="/companies">Parceiros</a></li>
-              <li><a href="/courses">Cursos</a></li>
-              <li class="divider"></li>
-              <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-    <div class="container-fluid">
-      <div class="row">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a href="/"><img alt="Seekat" class="navbar-brand" src="images\logo-topo\marca-seekat.png" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <form role="search" class="navbar-form navbar-left">
+              <div class="form-group">
+              <input type="text" placeholder="Buscar" class="form-control">
+              </div>
+              </form>
+                <li><a href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Criar Conta</a></li>
+                <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+          </ul>
       </div>
+     </div>
+    </nav>
 
-    </div>
 
+    <div class="space60"></div>
 
-<div class="form panel">
-  <div class="row">
-    <div class= "col-md-6 col-md-offset-3">
-      <div class="table-responsive">
-
-          <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>NOME</th>
-              <th>CPNJ</th>
-              <th>FONE</th>
-              <th>CONTATO</th>
-            </tr>
-          </thead>
-
-          <tbody>
-              <tr>
-                <td><a href="/companies/2">Jean Soft</a></td>
-                <td>76.221.532/0001-10</td>
-                <td> + 55 41 9844 5270</td>
-                <td>Jean Carlo Vicelli</td>
-              </tr>
-              <tr>
-                <td><a href="/companies/4">Chess</a></td>
-                <td>87.713.431/0001-83</td>
-                <td> +55 41 0000 000</td>
-                <td>Bruna Mansani</td>
-              </tr>
-              <tr>
-                <td><a href="/companies/3">Lulutas Development</a></td>
-                <td>87.713.431/0001-8</td>
-                <td> +55 41 9844 5172</td>
-                <td>Luciane Campagnin</td>
-              </tr>
-          </tbody>
-        </table>
-
-      </div>
-        <a class="btn btn-primary btn-md" href="/companies/new">Novo Parceiro</a>
-      </div>
-
-      <p></p>
-  </div>
-
-</div>
-
-<footer class="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12 social-footer">
+      <div class="form panel">
         <div class="row">
+          <div class= "col-md-6 col-md-offset-3">
+            <div class="table-responsive">
 
-          <div class="col-sm-1 col-sm-push-3 social-footer">
-            <a href="https://www.facebook.com/seekatconcept/?ref=bookmarks">
-            <img alt="facebook" class="img-responsive" src="images/social/icon-facebook.png" />
-            </a>
-          </div>
+                <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th><h4>Nome<h4></th>
+                    <th><h4>CPNJ<h4></th>
+                    <th><h4>Fone<h4></th>
+                    <th><h4>Contato<h4></th>
+                  </tr>
+                </thead>
 
-          <div class="col-sm-1 col-sm-push-3 social-footer">
-            <a href="https://plus.google.com/u/1/111413800798780091124">
-            <img alt="google+" class="img-responsive" src="images/social/icon-google.png" />
-            </a>
-          </div>
+                <tbody>
+                    <tr>
+                      <td><a href="/companies/2">Jean Soft</a></td>
+                      <td>76.221.532/0001-10</td>
+                      <td> + 55 41 9844 5270</td>
+                      <td>Jean Carlo Vicelli</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/4">Chess</a></td>
+                      <td>87.713.431/0001-83</td>
+                      <td> +55 41 0000 000</td>
+                      <td>Bruna Mansani</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/3">Lulutas Development</a></td>
+                      <td>87.713.431/0001-8</td>
+                      <td> +55 41 9844 5172</td>
+                      <td>Luciane Campagnin</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/2">Jean Soft</a></td>
+                      <td>76.221.532/0001-10</td>
+                      <td> + 55 41 9844 5270</td>
+                      <td>Jean Carlo Vicelli</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/4">Chess</a></td>
+                      <td>87.713.431/0001-83</td>
+                      <td> +55 41 0000 000</td>
+                      <td>Bruna Mansani</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/3">Lulutas Development</a></td>
+                      <td>87.713.431/0001-8</td>
+                      <td> +55 41 9844 5172</td>
+                      <td>Luciane Campagnin</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/2">Jean Soft</a></td>
+                      <td>76.221.532/0001-10</td>
+                      <td> + 55 41 9844 5270</td>
+                      <td>Jean Carlo Vicelli</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/4">Chess</a></td>
+                      <td>87.713.431/0001-83</td>
+                      <td> +55 41 0000 000</td>
+                      <td>Bruna Mansani</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/3">Lulutas Development</a></td>
+                      <td>87.713.431/0001-8</td>
+                      <td> +55 41 9844 5172</td>
+                      <td>Luciane Campagnin</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/2">Jean Soft</a></td>
+                      <td>76.221.532/0001-10</td>
+                      <td> + 55 41 9844 5270</td>
+                      <td>Jean Carlo Vicelli</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/4">Chess</a></td>
+                      <td>87.713.431/0001-83</td>
+                      <td> +55 41 0000 000</td>
+                      <td>Bruna Mansani</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/companies/3">Lulutas Development</a></td>
+                      <td>87.713.431/0001-8</td>
+                      <td> +55 41 9844 5172</td>
+                      <td>Luciane Campagnin</td>
+                    </tr>
+                </tbody>
+              </table>
 
-          <div class="col-sm-1 col-sm-push-3 social-footer">
-            <a href="https://twitter.com/seekatconcept">
-            <img alt="twitter" class="img-responsive" src="images/social/icon-twitter.png" />
-          </div>
+            </div>
+            <div class="space40"></div>
+            <div>
 
-          <div class="col-sm-1 col-sm-push-3 social-footer">
-            <a href="https://br.linkedin.com/in/seekat-concept-754b11115">
-            <img alt="linkedin" class="img-responsive" src="images/social/icon-linkedin.png" />
-          </div>
+              <a class="btn btn-primary btn-md btn-newpartner" href="/companies/new">Novo Parceiro</a>
+            </div>
 
-          <div class="col-sm-1 col-sm-push-3 social-footer">
-            <a href="https://www.instagram.com/seekatconcept/">
-            <img alt="instagram" class="img-responsive" src="images/social/icon-instagram.png" />
-          </div>
+        </div>
 
-          <div class="col-sm-1 col-sm-push-3 social-footer">
-            <a href="https://www.youtube.com/channel/UCux1V-2TlhjTu-2mIbn0ZzA">
-            <img alt="youtube" class="img-responsive" src="images/social/icon-youtube.png" />
+  </div> <!-- end of body-->
+
+
+
+    <div class="space60"></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 social-footer">
+            <div class="row">
+
+              <div class="col-sm-1 col-sm-push-3 social-footer">
+                <a href="https://www.facebook.com/seekatconcept/?ref=bookmarks">
+                <img alt="facebook" class="img-responsive" src="images/social/icon-facebook.png" />
+                </a>
+              </div>
+
+              <div class="col-sm-1 col-sm-push-3 social-footer">
+                <a href="https://plus.google.com/u/1/111413800798780091124">
+                <img alt="google+" class="img-responsive" src="images/social/icon-google.png" />
+                </a>
+              </div>
+
+              <div class="col-sm-1 col-sm-push-3 social-footer">
+                <a href="https://twitter.com/seekatconcept">
+                <img alt="twitter" class="img-responsive inline-block" src="images/social/icon-twitter.png" />
+              </div>
+
+              <div class="col-sm-1 col-sm-push-3 social-footer">
+                <a href="https://br.linkedin.com/in/seekat-concept-754b11115">
+                <img alt="linkedin" class="img-responsive inline-block" src="images/social/icon-linkedin.png" />
+              </div>
+
+              <div class="col-sm-1 col-sm-push-3 social-footer">
+                <a href="https://www.instagram.com/seekatconcept/">
+                <img alt="instagram" class="img-responsive inline-block" src="images/social/icon-instagram.png" />
+              </div>
+
+              <div class="col-sm-1 col-sm-push-3 social-footer">
+                <a href="https://www.youtube.com/channel/UCux1V-2TlhjTu-2mIbn0ZzA">
+                <img alt="youtube" class="img-responsive inline-block" src="images/social/icon-youtube.png" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
+        <div class="row footer-links"> </div>
+          <div class="row">
+            <div class="col-sm-2 col-sm-push-3">
+              <p class="about">SOBRE</p>
+                <ul class="list-unstyled">
+                  <li><a href="/aboutus.html">Quem somos</a></li>
+                  <li><a href="/comofunciona">Como funciona</a></li>
+                  <li><a href="/servicos">Servicos oferecidos</a></li>
+                  <li><a href="/servicos">Termos de uso</a></li>
+                  <li><a href="/servicos">Política de privicidade</a></li>
+                </ul>
+            </div><!--close col smal-2"-->
 
-    <div class="row fotter-links"> </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-push-3">
-          <h6>SOBRE</h6>
-            <ul class="list-unstyled">
-              <li><a href="/aboutus.html">Quem somos</a></li>
-              <li><a href="/comofunciona">Como funciona</a></li>
-              <li><a href="/servicos">Servicos oferecidos</a></li>
-              <li><a href="/servicos">Termos de uso</a></li>
-              <li><a href="/servicos">Política de privicidade</a></li>
-            </ul>
-          </div><!--close col smal-2"-->
-
-          <div class="col-sm-2 col-sm-push-3">
-              <h6>PARCEIROS</h6>
-              <ul class="list-unstyled">
-                <li><a href="/empresas">Empresas</a></li>
-                <li><a href="/instituicoes">Instituições de ensino</a></li>
-                <li><a href="/palestrantes">Palestrantes</a></li>
-                <li><a href="/estudantes-profissionais">Estudantes e profissionais</a></li>
-              </ul>
+            <div class="col-sm-2 col-sm-push-3">
+              <p class="about">PARCEIROS</p>
+                <ul class="list-unstyled">
+                  <li><a href="/empresas">Empresas</a></li>
+                  <li><a href="/instituicoes">Instituições de ensino</a></li>
+                  <li><a href="/palestrantes">Palestrantes</a></li>
+                  <li><a href="/estudantes-profissionais">Estudantes e profissionais</a></li>
+                </ul>
             </div><!--end class col-sm-2-->
 
             <div class="col-sm-2 col-sm-push-3">
-                <h6>CONTATO</h6>
-                  <ul class="list-unstyled">
-                      <li><a href="/duvidas">Dúvidas frequentes</a></li>
+              <p class="about">CONTATO</p>
+                <ul class="list-unstyled">
+                  <li><a href="/duvidas">Dúvidas frequentes</a></li>
                       <li><a href="/suporte">Suporte</a></li>
-                  </ul>
-            </div>
-      </div><!--end class col-sm-2-->
-    </div><!--end class row-->
-    <div class="row fotter-links"> </div>
-      <div class="row">
-        <div class="col-sm-12 copyright">
-          <p class="copyright"> Copyright © 2016 Seek<strong>at</strong> &nbsp;
-            Desenvolvido por <a href="https://github.com/jcvicelli/" target="_blank">Jean Carlo Vicelli</a>
-            &nbsp; Design por <a href="https://github.com/lcampagnin/" target="_blank">Luciane Campagnin</a>
-          </p>
-        </div>
-      </div>
-    </div>
+                </ul>
+              </div>
+            </div><!--end class col-sm-2-->
+          </div><!--end class row-->
+          <div class="row footer-links"> </div>
 
-</footer>
-</div>
-</div>
-</html>
+          <div class="row fotter-links"> </div>
+            <div class="row">
+              <div class="col-sm-12 copyright">
+                <p class="copyright"> Copyright © 2016 Seek<strong>at</strong> &nbsp;
+                  Desenvolvido por <a href="https://github.com/jcvicelli/" target="_blank">Jean Carlo Vicelli</a>
+                  &nbsp; Design por <a href="https://github.com/lcampagnin/" target="_blank">Luciane Campagnin</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+  </div>
+  </div>
+  </html>
