@@ -15,25 +15,37 @@ body {
  letter-spacing: 1px;
 }
 
-a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
+a.hyperlink, a.hover, a.active, .a.focus, .a.hover {
   font-weight: bold;
+  text-decoration: overline;
+
 }
+
 
 /* Space Between elemets*/
-.space60 {
-  margin-top: 60px;
-}
-
-.space120 {
-  margin-top: 120px;
-}
 
 .space10 {
   margin-top: 10px;
 }
 
+.space30bu {
+  margin-top: 20px;
+}
+
 .space40 {
   margin-top: 40px;
+}
+
+.space60 {
+  margin-top: 60px;
+}
+
+.space80 {
+  margin-top: 80px;
+}
+
+.space120 {
+  margin-top: 120px;
 }
 
 .center h1 {
@@ -460,6 +472,17 @@ p {
   font-weight:normal;
 }
 
+li {
+  color:#58595B;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+}
+
+
+
 .row-courses {
   padding-right: 30px;
   padding-top: 40px;
@@ -843,7 +866,54 @@ p.name-company {
   border-left-width: 0;
   border-color: #E3C500 !important;
   color: #3E3D3D !important;
-
-.panelcompany{
-  border:0px;
 }
+
+.navbar-nav {
+  color:#e6e7e8;
+  font-size:11px;
+  line-height:13px;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:bold;
+  padding-top: 5px;
+}
+
+p.titleicon {
+  color:#234056;
+  font-size:25px;
+  line-height:8px;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:70;
+  margin-top: 60px;
+  margin-bottom:20px;
+}
+
+.title-perfil {
+  background: #fff;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.perfil {
+  background: #E3C500;
+  height: 900px;
+  padding-bottom: 120px;
+  padding-top:120px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+
+.icon-perfil {
+  align-items: center;
+  margin: 20px;
+}
+
+background: #e6e7e8;
