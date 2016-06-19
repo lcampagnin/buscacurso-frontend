@@ -15,25 +15,41 @@ body {
  letter-spacing: 1px;
 }
 
-a.hover, .btn-link:active, .btn-link:focus, .btn-link:hover {
+a.hyperlink, a.hover, a.active, .a.focus, .a.hover {
   font-weight: bold;
+  text-decoration: overline;
+
 }
+
 
 /* Space Between elemets*/
-.space60 {
-  margin-top: 60px;
-}
-
-.space120 {
-  margin-top: 120px;
-}
 
 .space10 {
   margin-top: 10px;
 }
 
+.space15 {
+  margin-top: 15px;
+}
+
+.space30bu {
+  margin-top: 20px;
+}
+
 .space40 {
   margin-top: 40px;
+}
+
+.space60 {
+  margin-top: 60px;
+}
+
+.space80 {
+  margin-top: 80px;
+}
+
+.space120 {
+  margin-top: 120px;
 }
 
 .center h1 {
@@ -460,6 +476,25 @@ p {
   font-weight:normal;
 }
 
+li {
+  color:#58595B;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+}
+
+li.white {
+  color:#fff;
+  font-size:1.3em;
+  line-height:1.7em;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:normal;
+}
+
+
 .row-courses {
   padding-right: 30px;
   padding-top: 40px;
@@ -843,7 +878,182 @@ p.name-company {
   border-left-width: 0;
   border-color: #E3C500 !important;
   color: #3E3D3D !important;
-
-.panelcompany{
-  border:0px;
 }
+
+.navbar-nav {
+  color:#e6e7e8;
+  font-size:11px;
+  line-height:13px;
+  letter-spacing: 0.5px;
+  text-align:left;
+  font-weight:bold;
+  padding-top: 5px;
+}
+
+/** vantagens de ser uma parceiro**/
+
+.box-yellow {
+  background: #E3C500;
+  height: auto;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.partner-title {
+  color:#234056;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.partner-subtitle {
+  color:#234056;
+  text-align:center;
+  font-size:22px;
+  letter-spacing: 0.1px;
+  font-weight:normal;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.normal-text {
+  color:#234056;
+  text-align:center;
+  font-size:20px;
+  letter-spacing: 0.5px;
+  font-weight:normal;
+}
+
+.img-center {
+  align-content: center;
+}
+
+
+/** end vantagens de ser uma parceiro**/
+
+
+/** CSS page contato**/
+.contact-backdrop {
+  height: 800px;
+  color:#fff;
+  background-image: 100%;
+  background-image: url(https://seekatconcept.files.wordpress.com/2016/06/header1.jpg);
+    background-repeat: no-repeat;
+}
+
+.painel-contact {
+  border: 0px;
+  border-color: transparent;
+  background: transparent;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.icon-perfil {
+  align-items: center;
+  margin: 20px;
+}
+
+.contact-button {
+  width: 100%;
+  background-color:#E3C500;
+  color: #3E3D3D;
+  font-size: 15px;
+  font-weight: 500;
+  border-width: 1px;
+  border-color:#E0AB26;
+}
+
+.contact-button:hover {
+  width: 100%;
+  background-color:#F2D552;
+  white-space: normal;
+  color:#3E3D3D;
+  border-width: 1px;
+  border-color:#E0AB26;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.one-register {
+  font-size: 36px;
+  text-align: left;
+  color: #234056;
+}
+
+.one {
+  margin-top: 40px;
+}
+
+.img-register {
+  align-content: center;
+  margin-left: 70px;
+  margin-right: 0px;
+}
+
+/**end CSS page contato**/
+
+
+/** CSS page perfil **/
+.title-icon-blue {
+  font-size: 36px;
+  text-align: left;
+  color: #234056;
+  text-align: left;
+}
+
+.subtitle-icon-blue {
+  font-size: 20px;
+  text-align: left;
+  color: #234056;
+  text-align: left;
+}
+
+.box-blue {
+  background: #234056;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+ .img-responsive {
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.partner-title-white {
+  color:#fff;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.partner-title-white-small {
+  color:#fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.partner-title-white-small-left {
+  color:#fff;
+  font-size: 1.3em;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+background: #e6e7e8;
